@@ -1,14 +1,14 @@
-Setup for Ubuntu
+Setup for CentOS
 ----------------
 
 This guide will help you setup a software development environment on [CentOS 6.6](http://wiki.centos.org/Manuals/ReleaseNotes/CentOS6.6). By the end, your computer will be configured with the same state-of-the-art tools used by professional software developers.
 
-This guide is mostly compatible with older versions of Ubuntu. So follow along as best you can while Googling any problems you come across.
+This guide is mostly compatible with older versions of CentOS. So follow along as best you can while Googling any problems you come across.
 
 
 ### The Terminal
 
-Included in Ubuntu is the **Terminal** -- an app that runs a Unix shell.
+Included in CentOS is the **Terminal** -- an app that runs a Unix shell.
 
 A **Unix shell** is a command line user interface between you and your computer's operating system. You're probably most familiar with the graphical user interface of your computer's operating system. While that's technically a shell too, most programmers think of the textual, command line interface when they hear to word _shell_.
 
@@ -58,7 +58,7 @@ The default profile for the Terminal looks pretty, but uses small text and has l
 First, run the following command to update your operating system's software.
 
 ```
-sudo apt-get update
+sudo yum update
 ```
 
 **TIP:** This will require your account password which **will not** appear on the screen as you type.
@@ -66,7 +66,7 @@ sudo apt-get update
 Then install a handy command line program called `curl`, which we'll use in a second.
 
 ```
-sudo apt-get install -y curl
+sudo yum -y install curl
 ```
 
 Then download and install the new Terminal Profile.
@@ -89,4 +89,4 @@ Finally, quit and relaunch the Terminal. Now, every new Terminal window will loo
 ![](https://imgur.com/JCIdYi7.png)
 
 
-### [Next ⇒](2_apt.md)
+### [Next ⇒](2_yum.md)
